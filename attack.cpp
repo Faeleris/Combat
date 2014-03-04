@@ -11,3 +11,6 @@ Attack::Attack(QString name, int strength) : _name(name), _strength(strength)
 
 Attack::Attack(QString name, int strength, int reach) : _name(name), _strength(strength), _reach(reach)
 {}
+
+Attack::~Attack()
+{}

@@ -21,9 +21,9 @@ public:
 
     inline void setName(QString name){_name = name;}
     inline void setHp(int hp){_hp = hp;}
-    inline void addAttack(Attack* attack){_attacks.insert(attack);}
+    inline void addAttack(Attack* attack){_attacks<<attack;}
     inline void removeAttack(Attack* attack){_attacks.remove(attack);}
-    inline void addConnection(Part* part){_connections.insert(part);}
+    inline void addConnection(Part* part){_connections<<part;}
     inline void removeConnection(Part* part){_connections.remove(part);}
     inline QString getName(){return _name;}
     inline int getHp(){return _hp;}

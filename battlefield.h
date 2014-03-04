@@ -11,8 +11,9 @@ class Battlefield : public QCoreApplication
 {
 public:
     Battlefield(int argc, char *argv[]);
+    ~Battlefield();
 
-    inline void addCharacter(Character* character){_characters.insert(character);}
+    inline void addCharacter(Character* character){_characters<<character;}
     inline void removeCharacter(Character* character){_characters.remove(character);}
 
 private:

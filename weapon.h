@@ -12,12 +12,13 @@ class Weapon
 public:
     Weapon();
     Weapon(QString name);
+    Weapon(QString name, Attack* attack);
     Weapon(QString name, QSet<Attack*> attacks);
 
     ~Weapon();
 
     inline void setName(QString name){_name = name;}
-    inline void addAttack(Attack* attack){_attacks.insert(attack);}
+    inline void addAttack(Attack* attack){_attacks<<attack;}
     inline void removeAttack(Attack* attack){_attacks.remove(attack);}
 
     inline QString getName(){return _name;}

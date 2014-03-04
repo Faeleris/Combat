@@ -11,6 +11,7 @@ public:
     Attack(QString name);
     Attack(QString name, int strength);
     Attack(QString name, int strength, int reach);
+    ~Attack();
 
     inline void setName(QString name){_name = name;}
     inline void setStrength(int strength){_strength = strength;}
