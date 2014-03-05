@@ -12,11 +12,13 @@ SOURCES += \
     weapon.cpp \
     attack.cpp \
     part.cpp \
-    battlefield.cpp
+    battlefield.cpp \
+    reading.cpp
 
 HEADERS += \
     character.h \
     weapon.h \
     attack.h \
     part.h \
-    battlefield.h
+    battlefield.h \
+    reading.h

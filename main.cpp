@@ -44,5 +44,5 @@ int main(int argc, char *argv[])
     delete attack;
     delete battle;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
